@@ -1,6 +1,5 @@
 Juego Batalla Naval
 
-
 Este proyecto consiste en desarrollar una versión del clásico juego Batalla Naval, inspirado en la
 versión que utilizaban los radioperadores militares antes de la invención de los computadores.
 La aplicación debe tener las siguientes funcionalidades:
@@ -23,7 +22,7 @@ vean su puntaje comparado con el puntaje de los demás jugadores.
 
 	-objetivo adivinar las posiciones de todos los barcos de la flota contraria y hundirlos con disparos a todas sus casillas
 	
-	-preparacion: se necesitan 2 jugadores con: 2 tableros(matrices) que tengan dos ejes x,y que tengan numeros(10) y letras(10 a-j) cada uno. / piezas de anotaciones para cada acierto(amarillo), otros de otro color para los fallos(blanco), piezas de barcos de diferentes longitudes ( 5 para cada jugador) no es necesario tener muchos barcos pero es necesario que los dos jugadores tengan flotas iguales en numero y longitud
+	-preparacion: se necesitan 2 jugadores con: 2 tableros(matrices) que tengan dos ejes x,y cada uno. / piezas de anotaciones para cada acierto(amarillo), otros de otro color para los fallos(blanco), piezas de barcos de diferentes longitudes ( 5 para cada jugador) no es necesario tener muchos barcos pero es necesario que los dos jugadores tengan flotas iguales en numero y longitud
 	
 	- no es necesario poner los nombres de los barcos pero:
 	- portaaviones 5 casillas
@@ -40,8 +39,4 @@ vean su puntaje comparado con el puntaje de los demás jugadores.
 		se indica la casilla a la que se dirije el ataque por una letra y numero cuadricula.
 		el otro jugador responde con la verdad(si la casilla esta ocupada por un barco es acierto) (si no hay nada ocupando el espacio dira AGUA)
 
-implementacion:
-
-	se veran por pantalla 2 matrices (1) la nuestra de barcos y (2) del juego(maquina) donde solo veremos donde tiramos nuestros disparos y se veran los aciertos o fallas
-	marcando con (🌊)fallos, (🟠)aciertos . Gana el primer jugador que hunda todos los barcos del otro.
 	

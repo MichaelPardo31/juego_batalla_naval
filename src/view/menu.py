@@ -35,7 +35,7 @@ class Menu:
             print("🚫 Acceso denegado")
             return
         
-        print("✅ Inicio de sesión exitoso.")
+        print(f"✅ Hola {nombre}, Inicio de sesión exitoso.")
         
         while True:
             self.mostrar_menu()

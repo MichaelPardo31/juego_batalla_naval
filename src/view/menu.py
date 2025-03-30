@@ -4,18 +4,29 @@ from src.btn.batalla_naval import BatallaNaval
 from src.btn.seguridad import cifrar
 
 class Menu:
+    """
+    Representa el menú principal.
+
+    Atributos:
+        juego: Instancia del juego.
+    """
     def __init__(self):
         self.juego = None
 
     def mostrar_menu(self):
         print("\n🌊 Bienvenido a Batalla Naval 🌊")
-        print("1. Ingresar al juego")
-        print("2. Salir")
+        print("1. Ingresar al juego 🏴‍☠️")
+        print("2. Salir 🏴‍☠️")
     
     def obtener_opcion(self):
-        return input("Seleccione una opción: ")
+        return input("Seleccione una opción 😶‍🌫️: ")
 
     def iniciar(self):
+        """
+        muestra el menú del juego.
+
+        Si la autenticación es exitosa, permite al usuario iniciar una partida o salir.
+        """
         nombre = input("Ingrese su nombre de usuario: ")
         password_ingresada = getpass.getpass("Ingrese su contraseña: ")
         contrasenia = cifrar(password_ingresada)
@@ -40,6 +51,11 @@ class Menu:
                 print("⚠️ Opción no válida, intenta de nuevo.")
 
     def iniciar_juego(self):
+        """
+        al iniciar pide al usuario las dimensiones del tablero y la cantidad de barcos a colocar.
+
+        permite la colocación de barcos.
+        """
         filas = int(input("Ingrese número de filas del tablero: "))
         columnas = int(input("Ingrese número de columnas del tablero: "))
 

@@ -2,7 +2,7 @@ from src.view.menu import Menu
 
 if __name__ == "__main__":
     """
-    🏴‍☠️ Ejecución del juego Batalla Naval
+    Este script ejecuta el menú del juego.
     """
     menu = Menu()
     menu.iniciar()

@@ -11,7 +11,6 @@ class Tablero:
     def colocar_barco(self, fila, columna, tamaño, orientacion):
         if tamaño <= 0:
             return False
-        
         if orientacion == "H":
             if columna + tamaño > self.columnas:
                 return False

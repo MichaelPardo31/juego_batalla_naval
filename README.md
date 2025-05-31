@@ -1,4 +1,6 @@
-Juego Batalla Naval
+Juego Batalla Naval.
+
+Yhoider & Michael
 
 Este proyecto consiste en desarrollar una versión del clásico juego Batalla Naval, inspirado en la
 versión que utilizaban los radioperadores militares antes de la invención de los computadores.

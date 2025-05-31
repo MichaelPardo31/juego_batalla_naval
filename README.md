@@ -39,4 +39,30 @@ vean su puntaje comparado con el puntaje de los demás jugadores.
 		se indica la casilla a la que se dirije el ataque por una letra y numero cuadricula.
 		el otro jugador responde con la verdad(si la casilla esta ocupada por un barco es acierto) (si no hay nada ocupando el espacio dira AGUA)
 
+==lógica del sistema y modo contra la computadora:==
+
+	- Sistema de IA para la computadora:
+		* Algoritmo de colocación de barcos:
+			- Distribución aleatoria pero inteligente
+			- Evita agrupar barcos en zonas específicas
+			- Mantiene distancia mínima entre barcos
+		
+		* Estrategia de disparos:
+			- Modo de búsqueda:
+				* Patrón de cuadrícula para cubrir el tablero
+				* Disparos sistemáticos por zonas
+			- Modo de persecución:
+				* Cuando acierta, analiza las casillas adyacentes
+				* Determina la dirección del barco
+				* Sigue el patrón del barco hasta hundirlo
+			- Modo de eliminación:
+				* Rodea el barco identificado
+				* Verifica casillas adyacentes no disparadas
+
+	- Sistema de juego:
+		* Turnos alternados con validación
+		* Registro de disparos y aciertos
+		* Sistema de puntuación simple
+		* Guardado de partidas
+		* Estadísticas básicas de juego
 	

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Naval</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Batalla Naval</h1>
+
+    <div id="login-section">
+        <h2>Iniciar Sesión o Crear Cuenta</h2>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="login-btn">Iniciar Sesión</button>
+        <button id="create-account-btn">Crear Cuenta</button>
+        <p id="message"></p>
+    </div>
+
+    <div id="game-setup-section" style="display:none;">
+        <h2>Configurar Partida</h2>
+        <label for="filas">Filas:</label>
+        <input type="number" id="filas" value="10" min="10"><br><br>
+        <label for="columnas">Columnas:</label>
+        <input type="number" id="columnas" value="10" min="10"><br><br>
+        <label for="num_barcos">Número de barcos (tamaño 3):</label>
+        <input type="number" id="num_barcos" value="3" min="3"><br><br>
+        <button id="start-game-btn">Iniciar Juego</button>
+        <p id="setup-message"></p>
+    </div>
+
+    <div id="game-section" style="display:none;">
+        <h2>Tu Tablero</h2>
+         <div id="player-board-container">
+             <div id="player-board" class="board"></div>
+         </div>
+
+        <div id="placement-controls" style="display: none;">
+            <p id="placement-message"></p>
+            <label for="orientation">Orientación:</label>
+            <select id="orientation">
+                <option value="H">Horizontal</option>
+                <option value="V">Vertical</option>
+            </select>
+            <br><br>
+            <label for="placement-row">Fila:</label>
+            <input type="number" id="placement-row" class="small-input" min="0">
+            <label for="placement-col">Columna:</label>
+            <input type="number" id="placement-col" class="small-input" min="0">
+            <button id="place-ship-btn">Colocar Barco</button>
+        </div>
+
+        <h2>Tablero Enemigo</h2>
+        <div id="computer-board-container">
+             <div id="computer-board" class="board"></div>
+        </div>
+
+        <p id="game-message"></p>
+
+        <div id="shooting-controls" style="display: none;">
+             <h2>Realizar Disparo</h2>
+             <label for="shoot-row">Fila:</label>
+             <input type="number" id="shoot-row" class="small-input" min="0">
+             <label for="shoot-col">Columna:</label>
+             <input type="number" id="shoot-col" class="small-input" min="0">
+             <button id="shoot-btn">Disparar</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,4 +1,4 @@
-from src.btn.tablero import Tablero
+from src.model.tablero import Tablero
 
 
 def test_tablero_grande():

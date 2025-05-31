@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), 30px);
+    grid-template-rows: repeat(var(--row-count), 30px);
+    gap: 1px;
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: lightblue;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cell.ship {
+    background-color: gray; /* Barco */
+}
+
+.cell.hit {
+    background-color: #ff4444;
+    color: white;
+    font-size: 24px;
+}
+
+.cell.miss {
+    background-color: #4444ff;
+    color: white;
+    font-size: 24px;
+}
+
+#message,
+#game-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, button {
+    margin: 5px;
+    padding: 8px;
+    font-size: 1em;
+}
+
+.small-input {
+    width: 50px;
+    padding: 5px;
+    margin: 3px;
+    display: inline-block;
+} 
